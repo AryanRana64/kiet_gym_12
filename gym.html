@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET Galaxy Gym | Hostel Fitness Hub</title>
+    <link rel="stylesheet" href="gym1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>KIET Galaxy Gym</h1>
+            <p>Your journey to strength, endurance, and discipline starts here.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="container" id="about">
+        <h2>About KIET Galaxy Gym</h2>
+        <p>Welcome to KIET Galaxy Gym—the ultimate campus fitness hub. We provide a clean, secure, and fully equipped space tailored for hostel students to balance academics with peak physical wellness.</p>
+        <p>Our facility features state-of-the-art resistance machines, dedicated free-weight zones, and high-performance cardio equipment designed to push your limits safely.</p>
+        
+        <div class="highlight-banner">
+            <span class="badge">Exclusive Access</span>
+            <p>Reserved exclusively for KIET Hostel Students during designated morning and evening hours.</p>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Gym Weight Area">
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Gym Equipment">
+            </div>
+        </div>
+    </section>
+
+    <div class="row-container">
+        <div class="container half-box" id="services">
+            <h2>Our Services</h2>
+            <ul class="feature-list">
+                <li><strong>Strength Training:</strong> Heavy-duty racks, benches, and Olympic barbells.</li>
+                <li><strong>Cardio Zone:</strong> Treadmills, stationary bikes, and rowing machines.</li>
+                <li><strong>Personal Guidance:</strong> Custom workout schedule blueprints from student trainers.</li>
+                <li><strong>Locker & Shower Facility:</strong> Secure daily storage and maintenance access.</li>
+            </ul>
+        </div>
+
+        <div class="container half-box" id="programs">
+            <h2>Popular Programs</h2>
+            <div class="program-card">
+                <h3>Hypertrophy & Muscle Building</h3>
+                <p>Designed for intermediate lifters looking to maximize muscle gains alongside college schedules.</p>
+            </div>
+            <div class="program-card">
+                <h3>Fat Loss & Conditioning</h3>
+                <p>High-intensity interval training (HIIT) circuits and core routines for quick stamina boosts.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container calculator-section">
+        <h2>Quick Membership Inquiry</h2>
+        <p>Check your eligibility status for semester gym access:</p>
+        <div class="form-group">
+            <select id="hostelYear">
+                <option value="1">1st Year Hostel Resident</option>
+                <option value="2">2nd Year Hostel Resident</option>
+                <option value="3">3rd Year Hostel Resident</option>
+                <option value="4">4th Year Hostel Resident</option>
+            </select>
+            <button class="btn-primary" onclick="checkAccess()">Register Interest</button>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <p><strong>Email:</strong> support@kietgalaxygym.edu</p>
+            <p><strong>Phone:</strong> +91 95346 58762</p>
+            <p><strong>Location:</strong> Campus Hostel Block B, KIET</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 KIET Galaxy Gym. Built for Student Fitness & Wellness.</p>
+    </footer>
+
+    <script>
+        function checkAccess() {
+            const year = document.getElementById("hostelYear").value;
+            alert(`Success! Your registration inquiry for Year ${year} has been submitted. Please collect your pass from the gym coordinator.`);
+        }
+    </script>
+</body>
+</html>
